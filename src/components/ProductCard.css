@@ -1,0 +1,16 @@
+.ratingRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.product{
+    margin: 5px;
+    justify-content: space-between;
+    display: flex;
+  
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+}

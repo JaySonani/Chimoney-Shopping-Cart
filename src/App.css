@@ -1,3 +1,7 @@
+body, html { 
+  font-family: 'AmazonRg', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,14 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: 'AmazonRg';
+  src: local('Lato'), url(./static/Fonts/AmazonEmber_Rg.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'AmazonBd';
+    font-weight: 900;
+    src: local('Lato'), url(./static/Fonts/AmazonEmber_Bd.ttf) format('opentype');
+}
+

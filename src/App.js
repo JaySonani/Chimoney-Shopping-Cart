@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import ProductsListingPage from './Pages/ProductsListingPage';
+import ProductDetailsPage from './Pages/ProductDetailsPage';
+import ShoppingCartPage from './Pages/ShoppingCartPage';
+import { useNavigate } from 'react-router-dom';
 
-function App() {
+
+const App = () => {
+  // const navigate = useNavigate();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path='/' element={<ProductsListingPage />} />
+          <Route path='/details' element={<ProductDetailsPage />} />
+          <Route path='/cart' element={<ShoppingCartPage />} />
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
