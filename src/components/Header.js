@@ -2,10 +2,10 @@ import CartLabel from './CartLabel';
 import './Header.css';
 
 const Header = () => {
-    return(
+    return (
         <div className='header'>
             <h3>Chimoney Amazon Shopping Cart</h3>
-            <CartLabel/>
+            <CartLabel />
         </div>
     );
 }

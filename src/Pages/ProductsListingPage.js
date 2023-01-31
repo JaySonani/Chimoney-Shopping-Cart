@@ -19,7 +19,7 @@ const ProductsListingPage = () => {
         axios(config)
             .then(function (response) {
                 loadProducts(response.data);
-                localStorage.setItem("productData",response.data);
+                localStorage.setItem("productData", response.data);
             })
             .catch(function (error) {
                 console.log(error);
@@ -36,7 +36,6 @@ const ProductsListingPage = () => {
                                 <Grid item>
                                     <ProductCard productData={product} />
                                 </Grid>
-
                             )
                         })
                     }

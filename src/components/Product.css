@@ -1,21 +1,18 @@
-
-.product-ex{
+.product-ex {
     display: flex;
     flex-direction: row;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
-    
 }
 
-.details-ex{
+.details-ex {
     padding: 30px;
     justify-content: flex-start !important;
 }
 
-.category-ex{
+.category-ex {
     flex-direction: row;
     display: flex;
 }

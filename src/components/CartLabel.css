@@ -1,4 +1,4 @@
-.cartLabel{
+.cartLabel {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -6,9 +6,8 @@
 
 }
 
-.itemCount{
+.itemCount {
     padding-left: 10px;
     color: #f08806;
     font-family: "AmazonBd";
-
 }

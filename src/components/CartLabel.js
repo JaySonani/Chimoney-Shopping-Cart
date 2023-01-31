@@ -16,9 +16,7 @@ const CartLabel = () => {
     const viewShoppingCart = () => {
         var shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));
         console.log(shoppingCart);
-
-    navigate("/cart");
-
+        navigate("/cart");
     }
 
     return (
@@ -27,11 +25,9 @@ const CartLabel = () => {
 
             <div className='itemCount'>
                 {itemsInCart}
-
             </div>
         </div>
-    );
-
+    )
 }
 
 export default CartLabel;

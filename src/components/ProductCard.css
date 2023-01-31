@@ -1,16 +1,15 @@
-.ratingRow{
+.ratingRow {
     display: flex;
     flex-direction: row;
 }
 
-.product{
+.product {
     margin: 5px;
     justify-content: space-between;
     display: flex;
-  
 }
 
-.price{
+.price {
     display: flex;
     flex-direction: row;
 }
